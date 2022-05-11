@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvAmt"
+        android:layout_marginLeft="2.5dp"/>
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter total amount"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/pax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amtPax"
+        android:layout_marginLeft="2.5dp"/>
+
+    <EditText
+        android:id="@+id/etAmtPax"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter no. of Pax"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/tbtnSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/enable_svs"
+            android:textOff="@string/disable_svs" />
+
+        <ToggleButton
+            android:id="@+id/tbtnGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="@string/enable_gst"
+            android:textOff="@string/disable_gst" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/discountAmt"
+        android:layout_marginLeft="2.5dp"/>
+
+    <EditText
+        android:id="@+id/editDiscount"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter discount amount"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/totalAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.5dp"
+        android:text="@string/totalAmt"/>
+
+    <TextView
+        android:id="@+id/eachPays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2.5dp"
+        android:text="@string/eachPays"/>
+
+    <RadioGroup
+        android:id="@+id/rgPayMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/rbPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PayNow" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@color/black"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

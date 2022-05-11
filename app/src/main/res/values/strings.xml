@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="tvAmt">Amount</string>
+    <string name="amtPax">Number of People</string>
+    <string name="disable_svs">No SVS</string>
+    <string name="enable_svs">SVS</string>
+    <string name="enable_gst">GST</string>
+    <string name="disable_gst">No GST</string>
+    <string name="discountAmt">Discount (%)</string>
+    <string name="reset">Reset</string>
+    <string name="split">Split</string>
+    <string name="totalAmt">Total amount:</string>
+    <string name="eachPays">Each person pays:</string>
+</resources>
